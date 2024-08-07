@@ -1,0 +1,452 @@
+40531_CMD  BF2_DN1200 FLARE STACK MAIN VALVE-CMD
+40531_FB  BF2_DN1200 FLARE STACK MAIN VALVE-FB
+40532_CMD  BF2_DN800 FLARE STACK BYPASS VALVE-CMD
+40532_FB  BF2_DN800 FLARE STACK BYPASS VALVE-FB
+BF2 CO in BF Gas(%)
+BF2 CO2 in BF Gas (%)
+BF2 Coal flow switch No 1
+BF2 Coal flow switch No 10
+BF2 Coal flow switch No 11
+BF2 Coal flow switch No 12
+BF2 Coal flow switch No 13
+BF2 Coal flow switch No 14
+BF2 Coal flow switch No 15
+BF2 Coal flow switch No 16
+BF2 Coal flow switch No 17
+BF2 Coal flow switch No 18
+BF2 Coal flow switch No 2
+BF2 Coal flow switch No 3
+BF2 Coal flow switch No 4
+BF2 Coal flow switch No 5
+BF2 Coal flow switch No 6
+BF2 Coal flow switch No 7
+BF2 Coal flow switch No 8
+BF2 Coal flow switch No 9
+BF2 H2 in BF Gas (%)
+BF2 TUYERE VELOCITY
+BF2: No of Skip Car Trips - Reset Hourly
+BF2_BFBD  PIW   880
+BF2_BFBD  PIW   882
+BF2_BFBD  PIW   884
+BF2_BFBD  PIW   886
+BF2_BFBD  PIW   894
+BF2_BFBD  PIW   896
+BF2_BFBD  PIW   898
+BF2_BFBD  PIW   900
+BF2_BFBD  PIW   902
+BF2_BFBD  PIW   904
+BF2_BFBD  PIW   906
+BF2_BFBD  PIW   908
+BF2_BFBD Flare Stack Bypass Pressure
+BF2_BFBD Flare Stack Pressure
+BF2_BFBD Furnace Body 12975mm Temp A
+BF2_BFBD Furnace Body 12975mm Temp B
+BF2_BFBD Furnace Body 12975mm Temp C
+BF2_BFBD Furnace Body 12975mm Temp D
+BF2_BFBD Furnace Body 15162mm Temp A
+BF2_BFBD Furnace Body 15162mm Temp B
+BF2_BFBD Furnace Body 15162mm Temp C
+BF2_BFBD Furnace Body 15162mm Temp D
+BF2_BFBD Furnace Body 18660mm Temp A
+BF2_BFBD Furnace Body 18660mm Temp B
+BF2_BFBD Furnace Body 18660mm Temp C
+BF2_BFBD Furnace Body 18660mm Temp D
+BF2_BFBD Furnace Body 4373mm Temp A
+BF2_BFBD Furnace Body 4373mm Temp B
+BF2_BFBD Furnace Body 4373mm Temp C
+BF2_BFBD Furnace Body 4373mm Temp D
+BF2_BFBD Furnace Body 4373mm Temp E
+BF2_BFBD Furnace Body 4373mm Temp F
+BF2_BFBD Furnace Body 4373mm Temp G
+BF2_BFBD Furnace Body 5411mm Temp A
+BF2_BFBD Furnace Body 5411mm Temp B
+BF2_BFBD Furnace Body 5411mm Temp C
+BF2_BFBD Furnace Body 5411mm Temp D
+BF2_BFBD Furnace Body 5411mm Temp E
+BF2_BFBD Furnace Body 5411mm Temp F
+BF2_BFBD Furnace Body 5411mm Temp G
+BF2_BFBD Furnace Body 5411mm Temp H
+BF2_BFBD Furnace Body 5411mm Temp I
+BF2_BFBD Furnace Body 5411mm Temp J
+BF2_BFBD Furnace Body 5411mm Temp K
+BF2_BFBD Furnace Body 5411mm Temp L
+BF2_BFBD Furnace Body 5411mm Temp M
+BF2_BFBD Furnace Body 5757mm Temp A
+BF2_BFBD Furnace Body 5757mm Temp B
+BF2_BFBD Furnace Body 5757mm Temp C
+BF2_BFBD Furnace Body 5757mm Temp D
+BF2_BFBD Furnace Body 5757mm Temp E
+BF2_BFBD Furnace Body 5757mm Temp F
+BF2_BFBD Furnace Body 5757mm Temp G
+BF2_BFBD Furnace Body 5757mm Temp H
+BF2_BFBD Furnace Body 5757mm Temp I
+BF2_BFBD Furnace Body 5757mm Temp J
+BF2_BFBD Furnace Body 5757mm Temp K
+BF2_BFBD Furnace Body 5757mm Temp L
+BF2_BFBD Furnace Body 5757mm Temp M
+BF2_BFBD Furnace Body 6103mm Temp A
+BF2_BFBD Furnace Body 6103mm Temp B
+BF2_BFBD Furnace Body 6103mm Temp C
+BF2_BFBD Furnace Body 6103mm Temp D
+BF2_BFBD Furnace Body 6103mm Temp E
+BF2_BFBD Furnace Body 6103mm Temp F
+BF2_BFBD Furnace Body 6103mm Temp G
+BF2_BFBD Furnace Body 6103mm Temp H
+BF2_BFBD Furnace Body 6103mm Temp I
+BF2_BFBD Furnace Body 6103mm Temp J
+BF2_BFBD Furnace Body 6103mm Temp K
+BF2_BFBD Furnace Body 6103mm Temp L
+BF2_BFBD Furnace Body 6103mm Temp M
+BF2_BFBD Furnace Body 6795mm Temp A
+BF2_BFBD Furnace Body 6795mm Temp B
+BF2_BFBD Furnace Body 6795mm Temp C
+BF2_BFBD Furnace Body 6795mm Temp D
+BF2_BFBD Furnace Body 6795mm Temp E
+BF2_BFBD Furnace Body 6795mm Temp F
+BF2_BFBD Furnace Body 6795mm Temp G
+BF2_BFBD Furnace Body 6795mm Temp H
+BF2_BFBD Furnace Body 6795mm Temp I
+BF2_BFBD Furnace Body 6795mm Temp J
+BF2_BFBD Furnace Body 6795mm Temp K
+BF2_BFBD Furnace Body 6795mm Temp L
+BF2_BFBD Furnace Body 7565mm Temp A
+BF2_BFBD Furnace Body 7565mm Temp B
+BF2_BFBD Furnace Body 7565mm Temp C
+BF2_BFBD Furnace Body 7565mm Temp D
+BF2_BFBD Furnace Body 7565mm Temp E
+BF2_BFBD Furnace Body 7565mm Temp F
+BF2_BFBD Furnace Body 7565mm Temp G
+BF2_BFBD Furnace Body 7565mm Temp H
+BF2_BFBD Furnace Body 7565mm Temp I
+BF2_BFBD Furnace Body 7565mm Temp J
+BF2_BFBD Furnace Body 7565mm Temp K
+BF2_BFBD Furnace Body 7565mm Temp L
+BF2_BFBD Furnace Body 7565mm Temp M
+BF2_BFBD Furnace Body 7565mm Temp N
+BF2_BFBD Furnace Body 8335mm Temp A
+BF2_BFBD Furnace Body 8335mm Temp B
+BF2_BFBD Furnace Body 8335mm Temp C
+BF2_BFBD Furnace Body 8335mm Temp D
+BF2_BFBD Furnace Body 8335mm Temp E
+BF2_BFBD Furnace Body 8335mm Temp F
+BF2_BFBD Furnace Body 8335mm Temp G
+BF2_BFBD Furnace Body 8335mm Temp H
+BF2_BFBD Furnace Body 8335mm Temp I
+BF2_BFBD Furnace Body 8335mm Temp J
+BF2_BFBD Furnace Body 8335mm Temp K
+BF2_BFBD Furnace Body 8335mm Temp L
+BF2_BFBD Furnace Body 8335mm Temp M
+BF2_BFBD Furnace Body 8335mm Temp N
+BF2_BFBD Furnace Body 9105mm Temp A
+BF2_BFBD Furnace Body 9105mm Temp B
+BF2_BFBD Furnace Body 9105mm Temp C
+BF2_BFBD Furnace Body 9105mm Temp D
+BF2_BFBD Furnace Body 9105mm Temp E
+BF2_BFBD Furnace Body 9105mm Temp F
+BF2_BFBD Furnace Body 9105mm Temp G
+BF2_BFBD Furnace Body 9105mm Temp H
+BF2_BFBD Furnace Body 9105mm Temp I
+BF2_BFBD Furnace Body 9105mm Temp J
+BF2_BFBD Furnace Body 9105mm Temp K
+BF2_BFBD Furnace Body 9105mm Temp L
+BF2_BFBD Furnace Body Cooling Water Bosh and Belly Flow
+BF2_BFBD Furnace Body Cooling Water Bosh and Belly Flow - Process
+BF2_BFBD Furnace Body Cooling Water Bosh and Belly Pressure
+BF2_BFBD Furnace Body Cooling Water Bottom Flow
+BF2_BFBD Furnace Body Cooling Water Bottom Flow - Process
+BF2_BFBD Furnace Body Cooling Water Bottom Outlet 1 Temp
+BF2_BFBD Furnace Body Cooling Water Bottom Outlet 2 Temp
+BF2_BFBD Furnace Body Cooling Water Bottom Pressure
+BF2_BFBD Furnace Body Cooling Water Hearth Flow
+BF2_BFBD Furnace Body Cooling Water Hearth Flow - Process
+BF2_BFBD Furnace Body Cooling Water Hearth Pressure
+BF2_BFBD Furnace Body Cooling Water Lower Stack Flow
+BF2_BFBD Furnace Body Cooling Water Lower Stack Flow - Process
+BF2_BFBD Furnace Body Cooling Water Lower Stack Pressure
+BF2_BFBD Furnace Body Cooling Water Mains Pressure
+BF2_BFBD Furnace Body Cooling Water Mains Temp
+BF2_BFBD Furnace Body Cooling Water Upper Shaft Flow
+BF2_BFBD Furnace Body Cooling Water Upper Shaft Flow - Process
+BF2_BFBD Furnace Body Cooling Water Upper Shaft Pressure
+BF2_BFBD High Pressure Cooling Water Mains Pressure
+BF2_BFBD High Pressure Cooling Water Mains Temp
+BF2_BFBD Pressure Pump Cooling Water Mains Flow
+BF2_BFBD Pressure Pump Cooling Water Mains Flow - Process
+BF2_BFBD Pressure Pump Cooling Water Mains Pressure
+BF2_BFBD Tuyere Nose Cooling Water Mains Flow
+BF2_BFBD Tuyere Nose Cooling Water Mains Flow - Process
+BF2_BFBD Tuyere Nose Cooling Water Mains Pressure
+BF2_BFBD Tuyere Nose Cooling Water Mains Temp
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp A
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp B
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp C
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp D
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp E
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp F
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp G
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp H
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp I
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp J
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp K
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp L
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp M
+BF2_BFBD Tuyere Nose Cooling Water Supply Pipes Temp N
+BF2_BODY_BOTTOM DP
+BF2_BODY_ETACO
+BF2_BODY_PERMEABILITY
+BF2_BODY_RAFT
+BF2_BODY_TOP DP
+BF2_BODY_TOTAL DP
+BF2_CHDD Bag Filter Inlet Temperature
+BF2_CHDD Bag Filter Inlet/Outlet Pressure
+BF2_CHDD Fan Bearing Temperature A
+BF2_CHDD Fan Bearing Temperature B
+BF2_CHDD Fan Front Bearing Vibration A
+BF2_CHDD Fan Inlet Pressure
+BF2_CHDD HT MOTOR ID FAN FB ON
+BF2_CHDD Hydraulic Coupler Actuator Control (Motor 
+BF2_CHDD Motor Bearing  Temperature A
+BF2_CHDD Motor Bearing  Temperature B
+BF2_CHDD Motor Stator  Temperature A
+BF2_CHDD Motor Stator  Temperature B
+BF2_CHDD Motor Stator  Temperature C
+BF2_CHDD Oil Inlet Flange Pressure
+BF2_CHDD Oil Inlet Flange temperature
+BF2_CHDD Oil Outlet Flange temperature
+BF2_PROC Hot Blast Pressure
+BF2_PROC Hot Blast Temp
+BF2_PROC Hot Blast Temp Spare
+BF2_PROC Hot Blast Volume
+BF2_PROC Network Pressure
+BF2_PROC Radar Stock Rod Level
+BF2_PROC Stock Rod 1 Position
+BF2_PROC Stock Rod 2 Position
+BF2_PROC Top Pressure 1
+BF2_PROC Top Pressure 2
+BF2_PROC Top Pressure 3
+BF2_PROC Top Pressure 4
+BF2_PROC Top Pressure Average
+BF2_PROC Top Temp 1
+BF2_PROC Top Temp 2
+BF2_PROC Top Temp 3
+BF2_PROC Top Temp 4
+BF2_PROC Top Temp Average
+BF2_SHDD Bag Filter Inlet Temperature
+BF2_SHDD Bag Filter Inlet/Outlet Pressure
+BF2_SHDD Damper Actuator Control (Motor)
+BF2_SHDD Fan Bearing Temperature A
+BF2_SHDD Fan Bearing Temperature B
+BF2_SHDD Fan Front Bearing Vibration A
+BF2_SHDD Fan Inlet Pressure
+BF2_SHDD Motor Bearing  Temperature A
+BF2_SHDD Motor Bearing  Temperature B
+BF2_SHDD Motor Stator  Temperature A
+BF2_SHDD Motor Stator  Temperature B
+BF2_SHDD Motor Stator  Temperature C
+BF2_SHTC  Chute Rotation Motor 1 Current
+BF2_SHTC  J101 Belt Conveyor Motor Current
+BF2_SHTC  K102 Belt Conveyor Motor Current
+BF2_SHTC  Lower Seal Valve Close
+BF2_SHTC  Lower Seal Valve Open
+BF2_SHTC  M1 Exceed Limit
+BF2_SHTC  M1 Fan Running
+BF2_SHTC  M1 Fault
+BF2_SHTC  M1 Lifting Stock Rod 
+BF2_SHTC  M1 Putting Stock Rod 
+BF2_SHTC  M1 Release Clasp Brake
+BF2_SHTC  M1 Waiting Position
+BF2_SHTC  M2 Exceed Limit
+BF2_SHTC  M2 Fan Running
+BF2_SHTC  M2 Fault
+BF2_SHTC  M2 Lifting Stock Rod 
+BF2_SHTC  M2 Putting Stock Rod 
+BF2_SHTC  M2 Release Clasp Brake
+BF2_SHTC  M2 Waiting Position
+BF2_SHTC  Material Flow Control Valve Close
+BF2_SHTC  Material Flow Control Valve Open 
+BF2_SHTC  Mechanical Zero 
+BF2_SHTC  Motor Cooling Fan Run
+BF2_SHTC  Safe Switch
+BF2_SHTC  Upper Seal Valve Close
+BF2_SHTC  Upper Seal Valve Open
+BF2_SHTC  V1 Gas Equalizing Valve Close
+BF2_SHTC  V1 Gas Equalizing Valve Open
+BF2_SHTC  V1 Gravity Dust Collector Blow Off Valve Close
+BF2_SHTC  V1 Gravity Dust Collector Blow Off Valve Close
+BF2_SHTC  V1 Gravity Dust Collector Blow Off Valve Open
+BF2_SHTC  V1 Gravity Dust Collector Blow Off Valve Open
+BF2_SHTC  V1 Nitrogen Equalizing Valve Close
+BF2_SHTC  V1 Nitrogen Equalizing Valve Open
+BF2_SHTC  V1 Pressure Relief Valve Close
+BF2_SHTC  V1 Pressure Relief Valve Open
+BF2_SHTC  V1 Top Blow Off Valve Close
+BF2_SHTC  V1 Top Blow Off Valve Open
+BF2_SHTC  V2 Gas Equalizing Valve Close
+BF2_SHTC  V2 Gas Equalizing Valve Open
+BF2_SHTC  V2 Nitrogen Equalizing Valve Close
+BF2_SHTC  V2 Nitrogen Equalizing Valve Open
+BF2_SHTC  V2 Pressure Relief Valve Close
+BF2_SHTC  V2 Pressure Relief Valve Open
+BF2_SHTC  V2 Top Blow Off Valve Close
+BF2_SHTC  V2 Top Blow Off Valve Open
+BF2_SHTC  West Car Parking
+BF2_SHTC  West Car Slow
+BF2_SHTC  West Car Slow Again
+BF2_SHTC  West Car UP Beyond The Limit
+BF2_SHTC  West Car UP Seal Check
+BF2_SHTC Chute Rotation Motor 2 Current
+BF2_SHTC Discharge Valve Close CMD
+BF2_SHTC Discharge Valve Open CMD
+BF2_SHTC Lower Seal Valve Close CMD
+BF2_SHTC Lower Seal Valve Open CMD
+BF2_SHTC M01 Hydraulic Station Accumulator Low Pressure
+BF2_SHTC M01 Hydraulic Station Cycle Filter Block 1
+BF2_SHTC M01 Hydraulic Station Cycle Filter Block 2
+BF2_SHTC M01 Hydraulic Station Oil Pressure 1
+BF2_SHTC M01 Hydraulic Station Oil Temp
+BF2_SHTC M02 Hydraulic Station Accumulator Low Pressure
+BF2_SHTC M02 Hydraulic Station Cycle Filter Block 1
+BF2_SHTC M02 Hydraulic Station Cycle Filter Block 2
+BF2_SHTC M02 Hydraulic Station High High Level Alarm
+BF2_SHTC M02 Hydraulic Station High High Temperature Alarm
+BF2_SHTC M02 Hydraulic Station High Pressure Alarm
+BF2_SHTC M02 Hydraulic Station High Temperature Alarm
+BF2_SHTC M02 Hydraulic Station Low Low Level Alarm
+BF2_SHTC M02 Hydraulic Station Low Low Temperature Alarm
+BF2_SHTC M02 Hydraulic Station Low Pressure Alarm
+BF2_SHTC M02 Hydraulic Station Low Temperature Alarm
+BF2_SHTC M02 Hydraulic Station LS Intake Valve 2
+BF2_SHTC M02 Hydraulic Station LS Intake Valve 3
+BF2_SHTC M02 Hydraulic Station Of Ore Bin System LS Intake Valve 1
+BF2_SHTC M02 Hydraulic Station Oil Pressure 1
+BF2_SHTC M02 Hydraulic Station Oil Pressure 2
+BF2_SHTC M02 Hydraulic Station Oil Temp
+BF2_SHTC M02 Hydraulic Station Oil Temp
+BF2_SHTC M02 Hydraulic Station Return Filter Block 1
+BF2_SHTC M02 Hydraulic Station Return Filter Block 2
+BF2_SHTC M02 Stn M1 Ore Bin Hydraulic Motor Run
+BF2_SHTC M02 Stn M2 Ore Bin Hydraulic Motor Run
+BF2_SHTC M02 Stn M3 Ore Bin Hydraulic Motor Run
+BF2_SHTC M1 Gauge Rod Motor Current
+BF2_SHTC M1 Gauge Rod Motor Torque
+BF2_SHTC M2 Gauge Rod Motor Current
+BF2_SHTC M2 Gauge Rod Motor Torque
+BF2_SHTC Skip Car Drive 1 Current
+BF2_SHTC Skip Car Drive 2 Current
+BF2_SHTC Skip Car Vibration
+Delta T of Stave No 1
+Delta T of Stave No 10
+Delta T of Stave No 11
+Delta T of Stave No 12
+Delta T of Stave No 13
+Delta T of Stave No 14
+Delta T of Stave No 15
+Delta T of Stave No 16
+Delta T of Stave No 17
+Delta T of Stave No 18
+Delta T of Stave No 19
+Delta T of Stave No 2
+Delta T of Stave No 20
+Delta T of Stave No 22
+Delta T of Stave No 23
+Delta T of Stave No 24
+Delta T of Stave No 25
+Delta T of Stave No 26
+Delta T of Stave No 27
+Delta T of Stave No 28
+Delta T of Stave No 29
+Delta T of Stave No 3
+Delta T of Stave No 31
+Delta T of Stave No 32
+Delta T of Stave No 4
+Delta T of Stave No 5
+Delta T of Stave No 6
+Delta T of Stave No 7
+DO_High_MTOO_BF2_Clock
+FI_40403  BF2_DISTRIBUTOR GEARBOX WATER FLOW-INLET
+FI_40405  BF2_DISTRIBUTOR GEARBOX WATER FLOW-THROAT
+FI_40408  BF2_DISTRIBUTOR GEARBOX NITROGEN FLOW
+HIK40631  BF2_CHDD Damper Actuator Position
+HOT BLAST Volume Timer
+MTOO_BF2_Clock
+MTOO_SkpCar_Drv1_Cur
+MTOO_SkpCar_Drv2_Cur
+Skip Car Drive 1 Current &gt;200 Timer (Sec)
+Skip car Drive 1 Current Timer
+Skip Car Drive 2 Current &gt;200 Timer (Sec)
+Skip Car Drive 2 Current Timer
+SO_MTOOS_Number_Time_Active_MTOO_BF2_Clock
+SO_MTOOS_Number_Time_Active_MTOO_SkpCar_Drv1_Cur
+SO_MTOOS_Number_Time_Active_MTOO_SkpCar_Drv2_Cur
+SO_MTOOS_Time_Active_MTOO_BF2_Clock
+SO_MTOOS_Time_Active_MTOO_SkpCar_Drv1_Cur
+SO_MTOOS_Time_Active_MTOO_SkpCar_Drv2_Cur
+SO_MTOOS_Time_Start_MTOO_BF2_Clock
+SO_MTOOS_Time_Start_MTOO_SkpCar_Drv1_Cur
+SO_MTOOS_Time_Start_MTOO_SkpCar_Drv2_Cur
+SO_MTOOS_Total_RunTime_MTOO_BF2_Clock
+SO_MTOOS_Total_RunTime_MTOO_SkpCar_Drv1_Cur
+SO_MTOOS_Total_RunTime_MTOO_SkpCar_Drv2_Cur
+TE_40402A  BF2_DISTRIBUTOR GEARBOX TEMPERATURE
+TE_40402B  BF2_DISTRIBUTOR GEARBOX TEMPERATURE
+TE_40532A Runner Temp PCI side near to Taphole
+TE_40532B Runner Temp CR side near to Taphole
+TE_40532C Runner Temp PCI side near to skimmer
+TE_40532D Runner Temp CR side near to skimmer
+Test Tag
+Test Tag 1
+TESTdATA
+TI 40507b &lt;threshold
+TI40501b &lt;50
+TI40501d &lt;50
+TI40501f &lt;50
+TI40501g &lt;50
+TI40502c &lt;100
+TI40502g &lt;100
+TI40502i &lt;100
+TI40502m &lt;100
+TI40503c &lt;100
+TI40503g &lt;100
+TI40503i &lt;100
+TI40503m &lt;100
+TI40504c &lt;70
+TI40504g &lt;Threshold
+TI40504i &lt;70
+TI40504m &lt;70
+TI40505b &lt;Threshold
+TI40505e &lt;Threshold
+TI40505g &lt;Threshold
+TI40505l &lt;Threshold
+TI40506b &lt;Threshold
+TI40506e &lt;Threshold
+TI40506g &lt;Threshold
+TI40506m &lt;Threshold
+TI40507e &lt;Threshold
+TI40507g &lt;Threshold
+TI40507m &lt;Threshold
+TI40508b &lt;Threshold
+TI40508e &lt;Threshold
+TI40508g &lt;Threshold
+TI40508l &lt;Threshold
+TI40509a &lt;50
+TI40509b &lt;50
+TI40509c &lt;50
+TI40509d &lt;50
+TI40510a &lt;50
+TI40510b &lt;50
+TI40510c &lt;50
+TI40510d &lt;50
+TI40511a &lt;50
+TI40511b &lt;50
+TI40511c &lt;50
+TI40511d &lt;50
+TON BF2_SHTC  Chute Rotation Motor 1 Current
+TON BF2_SHTC  Chute Rotation Motor 2 Current
+Ton Process Network Pressure high
+Ton Process Network Pressure Low
+TON SHTC M01 Hydraulic Station Oil Pressure 1 &lt;70 BAR
+TON SHTC M01 Hydraulic Station Oil Pressure 1 &gt;105 T
+TON SHTC M02 Hydraulic Station Oil Pressure 1 &lt;70 BAR
+TON SHTC M02 Hydraulic Station Oil Pressure 1 &gt;105 BAR
+XT40631  BF2_CHDD Fan NDE Bearing Vibration
+XT40651  BF2_SHDD Fan NDE Bearing Vibration

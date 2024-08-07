@@ -1,0 +1,20 @@
+max_attempts: 5
+
+login:
+  username: "abdhahir.k@evonith.com"
+  password: "Evonith2022@"
+  url: "https://mcartalert.com/MeirCharts.aspx"
+  user_id: "txtUsername"
+  pwd_id: "txtPassword"
+  btn_login_id: "btnLogin"
+
+dates:
+  start_date: "2024-08-02"
+  end_date: "2024-08-09"
+  delta_date: 6
+  strt_date_id: "PageContentHolder_calendarSelect"
+  end_date_id: "PageContentHolder_calendarSelectEnd"
+  btn_date_id: "PageContentHolder_btnApplyChanges"
+
+variables:
+  btn_apply_id: "PageContentHolder_btnApplyChanges"
