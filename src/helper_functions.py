@@ -12,7 +12,7 @@ def load_config() -> Box:
     Load the configuration from a YAML file.
     :return: Box object containing the configuration data
     """
-    with open(root_path / "config" / "config.yml", "r") as file:
+    with open(root_path / "src" / "config" / "config.yml", "r") as file:
         config = yaml.safe_load(file)
     return Box(config)
 

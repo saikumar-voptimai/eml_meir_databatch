@@ -19,7 +19,7 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
 
 # Initialize MEIR instance
-meir = MEIR(config, driver, service)
+meir = MEIR(config, driver, service, logger)
 
 # Perform the required operations
 try:

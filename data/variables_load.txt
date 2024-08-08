@@ -220,5 +220,3 @@ TE_40532C Runner Temp PCI side near to skimmer
 TE_40532D Runner Temp CR side near to skimmer
 TON BF2_SHTC  Chute Rotation Motor 1 Current
 TON BF2_SHTC  Chute Rotation Motor 2 Current
-Ton Process Network Pressure high
-Ton Process Network Pressure Low
