@@ -3,10 +3,13 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from meir import MEIR
 from helper_functions import load_config, load_variables, setup_logging
+from pathlib import Path
 import logging
 import time
 
 # Load configurations and setup logging
+root_path = Path(__file__).resolve().parents[1]
+
 config = load_config()
 variables = load_variables()
 setup_logging()

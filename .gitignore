@@ -6,3 +6,4 @@ src/my_app.log
 src/my_app.log.1
 src/my_app.log.2
 src/my_app.log.3
+.env
