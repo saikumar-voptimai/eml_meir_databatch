@@ -1,9 +1,11 @@
 from box import Box
+from dotenv import load_dotenv
 from pathlib import Path
+from typing import List
 import logging.config
 import logging.handlers
+import os
 import yaml
-from typing import List
 
 root_path = Path(__file__).resolve().parents[1]
 
@@ -14,6 +16,10 @@ def load_config() -> Box:
     """
     with open(root_path / "src" / "config" / "config.yml", "r") as file:
         config = yaml.safe_load(file)
+    load_dotenv(root_path / ".env")
+    config['login']['username'] = os.getenv('MEIR_USERNAME')
+    config['login']['password'] = os.getenv('MEIR_PASSWORD')
+
     return Box(config)
 
 def load_variables() -> List[str]:

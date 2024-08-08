@@ -88,7 +88,8 @@ class MEIR:
             self.set_time_range(self.config.dates.start_time, self.config.dates.start_time)
             # TODO: Add time range using set_time_range function
 
-            for i in range(0, len(variables), 6):
+            start_var = self.config.start_from.variable
+            for i in range(start_var, len(variables), 6):
                 selected_vars = variables[i:i+6] if i+6 <= len(variables) else variables[i:]
                 self.apply_vars(selected_vars, self.config.max_attempts)
                 self.plot_apply()
