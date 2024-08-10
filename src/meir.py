@@ -82,13 +82,14 @@ class MEIR:
         """
         self.logger.info("Applying date ranges and variables.")
         current_start_date = self.start_date
+        run = 0
         while current_start_date < self.end_date:
             current_end_date = min(current_start_date + timedelta(days=self.config.dates.delta_date), self.end_date)
             self.set_date_range(current_start_date, current_end_date)
             self.set_time_range(self.config.dates.start_time, self.config.dates.start_time)
             # TODO: Add time range using set_time_range function
 
-            start_var = self.config.start_from.variable
+            start_var = self.config.start_from.variable if run == 0 else 0
             for i in range(start_var, len(variables), 6):
                 selected_vars = variables[i:i+6] if i+6 <= len(variables) else variables[i:]
                 self.apply_vars(selected_vars, self.config.max_attempts)
@@ -96,6 +97,7 @@ class MEIR:
                 self.data_download()
 
             current_start_date = current_end_date # + timedelta(days=1)
+            run += 1
             #TODO: Choose an appropriate time delay after implementing the time range
         self.logger.info("Completed applying date ranges and variables.")
 
