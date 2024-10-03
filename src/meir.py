@@ -223,7 +223,7 @@ class MEIR:
         
         download_dir = self.config.download.path
         downloaded_files = os.listdir(download_dir)
-        downloaded_files = [f for f in downloaded_files if f.endswith('.xls')]
+        downloaded_files = [f for f in downloaded_files if f.endswith('.txt')]
         downloaded_files.sort(key=lambda x: os.path.getctime(os.path.join(download_dir, x)), reverse=True)
         
         # Assume the latest file is the one just downloaded
