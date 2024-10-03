@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from meir import MEIR
 from helper_functions import load_config, load_variables, setup_logging
@@ -9,8 +10,20 @@ import time
 
 # Load configurations and setup logging
 root_path = Path(__file__).resolve().parents[1]
-
 config = load_config()
+
+# download_dir = config.download.path
+# chrome_options = Options()
+# prefs = {
+#     "download.default_directory": download_dir,
+#     "download.prompt_for_download": False,
+#     "directory_upgrade": True,
+# }
+# chrome_options.add_experimental_option("prefs", prefs)
+
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service)
+
 variables = load_variables()
 setup_logging()
 logger = logging.getLogger("DataExtraction")

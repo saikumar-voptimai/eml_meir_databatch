@@ -7,6 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from typing import List
 import logging
+import os
+import pandas as pd
 import time
 
 class MEIR:
@@ -89,12 +91,18 @@ class MEIR:
             self.set_time_range(self.config.dates.start_time, self.config.dates.start_time)
             # TODO: Add time range using set_time_range function
 
-            start_var = self.config.start_from.variable if run == 0 else 0
-            for i in range(start_var, len(variables), 6):
+            start_var = self.config.start_from.variable-1 if run == 0 else 0
+            if self.config.end_at.variable == "end":
+                self.config.end_at.variable = len(variables)
+            end_var = self.config.end_at.variable if run == 0 else len(variables)
+            for i in range(start_var, end_var, 6):
                 selected_vars = variables[i:i+6] if i+6 <= len(variables) else variables[i:]
                 self.apply_vars(selected_vars, self.config.max_attempts)
                 self.plot_apply()
                 self.data_download()
+                # self.file_rename()
+            
+                time.sleep(self.config.wait_times.download_wait)
 
             current_start_date = current_end_date # + timedelta(days=1)
             run += 1
@@ -196,3 +204,85 @@ class MEIR:
         time.sleep(self.config.wait_times.download_wait)
         #TODO: Add code to check the download status, file size, and download completion
         self.logger.info("Clicked the Export button.")
+
+    def file_rename(self, start_date: datetime, end_date: datetime, start_time: str, end_time: str, start_var: int, end_var: int) -> None:
+        """
+        Rename the downloaded file to the specified format.
+        :param start_date: Start date of the range
+        :param end_date: End date of the range
+        :param start_time: Start time of the range
+        :param end_time: End time of the range
+        :param start_var: Starting index of the variables set
+        :param end_var: Ending index of the variables set
+        :return: None
+        """
+        start_var_index = start_var + 1
+        end_var_index = min(end_var, start_var_index + 5)
+        
+        new_filename = f"{start_date.strftime('%Y-%m-%d')} {start_time} To {end_date.strftime('%Y-%m-%d')} {end_time} For {start_var_index}To{end_var_index}Vars.txt"
+        
+        download_dir = self.config.download.path
+        downloaded_files = os.listdir(download_dir)
+        downloaded_files = [f for f in downloaded_files if f.endswith('.xls')]
+        downloaded_files.sort(key=lambda x: os.path.getctime(os.path.join(download_dir, x)), reverse=True)
+        
+        # Assume the latest file is the one just downloaded
+        latest_file = os.path.join(download_dir, downloaded_files[0]) if downloaded_files else None
+        
+        if latest_file:
+            new_filepath = os.path.join(download_dir, new_filename)
+            os.rename(latest_file, new_filepath)
+            self.logger.info(f"Renamed file to: {new_filepath}")
+        else:
+            self.logger.warning("No downloaded file found to rename.")
+
+    def files_club(self) -> None:
+        """
+        Combine all the files into a single file and store it in a specified location.
+        Delete the original files afterward.
+        :return: None
+        """
+        # Path to the download directory and output directory
+        download_dir = self.config.download.path
+        output_dir = self.config.output.path
+        
+        # List all the renamed files in the download directory
+        downloaded_files = [f for f in os.listdir(download_dir) if f.endswith('.txt')]
+
+        if not downloaded_files:
+            self.logger.warning("No files found to combine.")
+            return
+
+        # Create a DataFrame list for combining
+        combined_df = pd.DataFrame()
+
+        for file_name in downloaded_files:
+            file_path = os.path.join(download_dir, file_name)
+            # Read the file content (assumed to be in text or tabular format)
+            df = pd.read_csv(file_path, delimiter='\t')  # Adjust delimiter if necessary
+            combined_df = pd.concat([combined_df, df], axis=1)  # Combine column-wise
+        
+        # Generate the final combined file name
+        if combined_df.empty:
+            self.logger.warning("No data to combine.")
+            return
+
+        # Assuming the start and end dates are the same across all files
+        first_file = downloaded_files[0]
+        start_date, start_time = first_file.split(' ')[0], first_file.split(' ')[1]
+        last_file = downloaded_files[-1]
+        end_date, end_time = last_file.split(' ')[4], last_file.split(' ')[5]
+
+        combined_filename = f"{start_date} {start_time} To {end_date} {end_time} For AllVars.txt"
+        combined_filepath = os.path.join(output_dir, combined_filename)
+
+        # Save the combined file to the specified location
+        combined_df.to_csv(combined_filepath, sep='\t', index=False)
+        self.logger.info(f"Combined file saved as: {combined_filepath}")
+        
+        # Delete original files
+        for file_name in downloaded_files:
+            file_path = os.path.join(download_dir, file_name)
+            os.remove(file_path)
+        
+        self.logger.info(f"Deleted original downloaded files after combining.")
