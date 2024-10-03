@@ -21,9 +21,6 @@ config = load_config()
 # }
 # chrome_options.add_experimental_option("prefs", prefs)
 
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
-
 variables = load_variables()
 setup_logging()
 logger = logging.getLogger("DataExtraction")
