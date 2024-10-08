@@ -1,15 +1,19 @@
+import os
+import re
+import pandas as pd
+import time
+from typing import List
+import logging
 from datetime import datetime, timedelta
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
-from typing import List
-import logging
-import os
-import pandas as pd
-import time
+
 
 class MEIR:
     """
@@ -36,12 +40,12 @@ class MEIR:
         :return: None
         """
         self.logger.info("Navigating to the login page.")
-        self.driver.get(self.config.login.url)
-        
+        self.driver.get(self.config.login.url)        
+
         username_field = self.driver.find_element(By.ID, self.config.login.user_id)
         password_field = self.driver.find_element(By.ID, self.config.login.pwd_id)
         login_button = self.driver.find_element(By.ID, self.config.login.btn_login_id)
-
+        
         username_field.send_keys(self.config.login.username)
         password_field.send_keys(self.config.login.password)
         login_button.click()
@@ -100,10 +104,9 @@ class MEIR:
                 self.apply_vars(selected_vars, self.config.max_attempts)
                 self.plot_apply()
                 self.data_download()
-                # self.file_rename()
+                self.file_rename(current_start_date, current_end_date, self.config.dates.start_time, self.config.dates.end_time, i, i+6)
             
                 time.sleep(self.config.wait_times.download_wait)
-
             current_start_date = current_end_date # + timedelta(days=1)
             run += 1
             #TODO: Choose an appropriate time delay after implementing the time range
@@ -216,21 +219,25 @@ class MEIR:
         :param end_var: Ending index of the variables set
         :return: None
         """
+        self.logger.info("Renaming the downloaded File.")
+
         start_var_index = start_var + 1
         end_var_index = min(end_var, start_var_index + 5)
         
-        new_filename = f"{start_date.strftime('%Y-%m-%d')} {start_time} To {end_date.strftime('%Y-%m-%d')} {end_time} For {start_var_index}To{end_var_index}Vars.txt"
+        new_filename = f"{start_date.strftime('%Y-%m-%d')} {start_time} To {end_date.strftime('%Y-%m-%d')} {end_time} For {start_var_index}To{end_var_index}Vars.xls"
         
-        download_dir = self.config.download.path
+        # Replace invalid characters for Windows filenames with an underscore or a valid character
+        cleaned_filename = re.sub(r'[<>:"/\\|?*]', '-', new_filename)
+        download_dir = self.config.file_handling.download_path
         downloaded_files = os.listdir(download_dir)
-        downloaded_files = [f for f in downloaded_files if f.endswith('.txt')]
+        downloaded_files = [f for f in downloaded_files if f.endswith('.xls')]
         downloaded_files.sort(key=lambda x: os.path.getctime(os.path.join(download_dir, x)), reverse=True)
         
         # Assume the latest file is the one just downloaded
         latest_file = os.path.join(download_dir, downloaded_files[0]) if downloaded_files else None
         
         if latest_file:
-            new_filepath = os.path.join(download_dir, new_filename)
+            new_filepath = os.path.join(download_dir, cleaned_filename)
             os.rename(latest_file, new_filepath)
             self.logger.info(f"Renamed file to: {new_filepath}")
         else:
